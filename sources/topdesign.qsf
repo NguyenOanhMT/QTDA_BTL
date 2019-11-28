@@ -1,0 +1,80 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+# Date created = 09:36:24  October 14, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		topdesign_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV GX"
+set_global_assignment -name DEVICE EP4CGX150DF31C7
+set_global_assignment -name TOP_LEVEL_ENTITY topdesign
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:36:24  OCTOBER 14, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name VHDL_FILE decoder7seg.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE topdesign.bdf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_V28 -to I[0]
+set_location_assignment PIN_C2 -to I[3]
+set_location_assignment PIN_V21 -to I[2]
+set_location_assignment PIN_U30 -to I[1]
+set_location_assignment PIN_E15 -to H0_0
+set_location_assignment PIN_E12 -to H0_1
+set_location_assignment PIN_G11 -to H0_2
+set_location_assignment PIN_F11 -to H0_3
+set_location_assignment PIN_F16 -to H0_4
+set_location_assignment PIN_D16 -to H0_5
+set_location_assignment PIN_F14 -to H0_6
+set_location_assignment PIN_A14 -to H4_0
+set_location_assignment PIN_A13 -to H4_1
+set_location_assignment PIN_C7 -to H4_2
+set_location_assignment PIN_C6 -to H4_3
+set_location_assignment PIN_C5 -to H4_4
+set_location_assignment PIN_C4 -to H4_5
+set_location_assignment PIN_C3 -to H4_6
+set_location_assignment PIN_B9 -to H6_0
+set_location_assignment PIN_B10 -to H6_1
+set_location_assignment PIN_C8 -to H6_2
+set_location_assignment PIN_C9 -to H6_3
+set_location_assignment PIN_D8 -to H6_4
+set_location_assignment PIN_D9 -to H6_5
+set_location_assignment PIN_E9 -to H6_6
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
