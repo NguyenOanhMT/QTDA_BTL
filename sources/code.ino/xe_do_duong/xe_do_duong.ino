@@ -97,14 +97,6 @@ int get_error(){
     sensor[2] = digitalRead(IR3); // IR3 chinh giua xe
     sensor[3] = digitalRead(IR4); // IR4
     sensor[4] = digitalRead(IR5); // IR5 ben phai xe
-    /*
-    Serial.print(sensor[0]);
-    Serial.print(sensor[1]);
-    Serial.print(sensor[2]);
-    Serial.print(sensor[3]);
-    Serial.print(sensor[4]);
-    Serial.println();
-    */
 
     if((sensor[0]==1)&&(sensor[1]==1)&&(sensor[2]==1)&&(sensor[3]==1)&&(sensor[4]==0))
     error=4;
